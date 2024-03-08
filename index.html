@@ -13,6 +13,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body style="background-color: rgb(245, 244, 243);" data-spy="scroll" data-target=".side-bar" data-offset="50">
@@ -26,12 +29,12 @@
                     <a class="navbar-brand mx-4 pe-4 border-end border-dark-subtle nametitle" href="#">
                         Li-Ting Wu
                     </a>
-                    <div class="d-flex" style="padding-left: 75vw;">
-                        <li class="nav-item" style="line-height: 4rem;">
-                            <a class="nav-link fs-4" href="#">Resume</a>
+                    <div class="d-flex" style="padding-left: 70vw;">
+                        <li class="nav-item me-3" style="line-height: 4rem;">
+                            <a class="fs-4 titleitem" href="#">Resume</a>
                         </li>
                         <li class="nav-item" style="line-height: 4rem;">
-                            <a class="nav-link fs-4" href="#">Contact</a>
+                            <a class="fs-4 titleitem" href="#">Contact</a>
                         </li>
                     </div>
 
@@ -61,7 +64,7 @@
                     <div>-🍵When not working, you can find me playing basketball , reading novel and
                         watching drama.</div>
                 </div>
-                <div class="col-12 text-center fs-1 text-secondary godown" style="margin-top: 10rem;">
+                <div class="col-12 text-center fs-1 text-secondary godown" style="margin-top: 5rem;">
                     <a class="fa-solid fa-chevron-down" href="#about" style="text-decoration: none;"></a>
                 </div>
             </div>
@@ -73,7 +76,33 @@
         <br>
         <br>
         <div class="title">ABOUT</div>
-
+        <div class="mx-auto fs-5 ms-sm-5 mt-5">Languages and Tools : </div>
+        <div class="ms-5 mt-3 tool">
+            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                    alt="css3" /> </a>
+            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                    alt="html5" /> </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    alt="javascript" /> </a>
+            <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                    alt="mysql" /> </a>
+            <a href="https://www.php.net" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+                    alt="php" /> </a>
+            <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="80"
+                    height="80" /> </a>
+            <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
+                    alt="illustrator" /> </a>
+            <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
+                    alt="photoshop" /> </a>
+        </div>
         <br>
         <br>
     </div>
@@ -104,15 +133,16 @@
                 <div class="tab-content">
                     <div id="home" class="container tab-pane active fs-4"><br>
                         <div class="row mycard">
-                            <div class="col-12 mx-auto text-center">
+                            <div class="col-sm-8 col-12 mx-auto text-center">
                                 <a href="https://wda.mackliu.com/s1120423">
-                                    <img src="./img/web/wburger.png" class="w-75 rounded shadow">
+                                    <img src="./img/web/wburger.png" class="w-100 rounded shadow">
                                 </a>
                             </div>
-                            <div class="mx-auto mt-3 fs-5 col-12 d-sm-flex flex-column text-center w-50">
+                            <div class="mx-auto mt-3 fs-5 col-sm-5 d-sm-flex flex-column text-center w-50 ">
                                 <b>W BERGER</b>
                                 <div class="fs-6 text-secondary">Web develop,design</div>
-                                <table class="boxContent">
+                                <div class="d-flex justify-content-center">
+                                <table class="boxContent text-center">
                                     <tbody>
                                         <tr>
                                             <td>Tools</td>
@@ -121,7 +151,6 @@
                                                 <i class="fa-brands fa-js"></i>,
                                                 <i class="fa-brands fa-bootstrap"></i>,
                                                 <i class="fa-brands fa-php"></i>
-
                                             </td>
                                         </tr>
                                         <tr>
@@ -129,115 +158,175 @@
                                             <td>A shopping website for burger restaurants.</td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </table></div>
                             </div>
                         </div>
                         <br>
                         <hr class="col-12">
                         <br>
                         <div class="row">
-                            <div class="col-6 mx-auto text-center mycard">
-                                <div class="col-6 ">
-                                    <a href="">
-                                        <img src="./img/web/calendar.png" class="w-100 rounded shadow">
-                                    </a>
-                                </div>
-                                <div class="mx-auto fs-5 col-sm-5 d-sm-flex flex-column text-center">
-                                    <b>CALENDAR</b>
-                                    <div class="fs-6 text-secondary">Web develop,design</div>
-                                    <table class="boxContent">
-                                        <tbody>
-                                            <tr>
-                                                <td>Tools</td>
-                                                <td><i class="fab fa-html5"></i>,
-                                                    <i class="fa-brands fa-css3-alt"></i>,
-                                                    <i class="fa-brands fa-bootstrap"></i>,
-                                                    <i class="fa-brands fa-php"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Brief</td>
-                                                <td>A Calendar web for any years.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="col-sm-6 col-12 mx-auto text-center mycard flex-column">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12">
+                                        <a href="">
+                                            <img src="./img/web/calendar.png" class="w-100 rounded shadow">
+                                        </a>
+                                    </div>
+                                    <div class="mx-auto fs-5 col-sm-5 col-12 d-sm-flex flex-column text-center">
+                                        <b>CALENDAR</b>
+                                        <div class="fs-6 text-secondary">Web develop,design</div>
+                                        <table class="boxContent">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tools</td>
+                                                    <td><i class="fab fa-html5"></i>,
+                                                        <i class="fa-brands fa-css3-alt"></i>,
+                                                        <i class="fa-brands fa-bootstrap"></i>,
+                                                        <i class="fa-brands fa-php"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brief</td>
+                                                    <td>A Calendar web for any years.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 mx-auto text-center mycard">
-                                <div class="col-6">
-                                    <a href="./front_final/index.html">
-                                        <img src="./img/web/api.png" class="w-100 rounded shadow">
-                                    </a>
-                                </div>
-                                <div class="mx-auto fs-5 col-sm-5 d-sm-flex flex-column text-center">
-                                    <b>RICK AND MORTY</b>
-                                    <div class="fs-6 text-secondary">Web develop,design</div>
-                                    <table class="boxContent">
-                                        <tbody>
-                                            <tr>
-                                                <td>Tools</td>
-                                                <td><i class="fab fa-html5"></i>,
-                                                    <i class="fa-brands fa-css3-alt"></i>,
-                                                    <i class="fa-brands fa-bootstrap"></i>,
-                                                    <i class="fa-brands fa-js"></i>, API
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Brief</td>
-                                                <td>An introduction web for RickandMorty.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="col-sm-6 col-12 mx-auto text-center mycard">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12">
+                                        <a href="./front_final/index.html">
+                                            <img src="./img/web/api.png" class="w-100 rounded shadow">
+                                        </a>
+                                    </div>
+                                    <div class="mx-auto fs-5 col-sm-5 col-12 d-sm-flex flex-column text-center">
+                                        <b>RICK AND MORTY</b>
+                                        <div class="fs-6 text-secondary">Web develop,design</div>
+                                        <table class="boxContent">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tools</td>
+                                                    <td><i class="fab fa-html5"></i>,
+                                                        <i class="fa-brands fa-css3-alt"></i>,
+                                                        <i class="fa-brands fa-bootstrap"></i>,
+                                                        <i class="fa-brands fa-js"></i>, API
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brief</td>
+                                                    <td>An introduction web for RickandMorty.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-6 mx-auto text-center mycard">
-                                <div class="col-6">
-                                    <a href="">
-                                        <img src="./img/web/front.png" class="w-100 rounded shadow">
-                                    </a>
-                                </div>
-                                <div class="mx-auto fs-5 col-sm-5 d-sm-flex flex-column text-center">
-                                    <b>Q BERGER</b>
-                                    <div class="fs-6 text-secondary">Web develop,design</div>
-                                    <table class="boxContent">
-                                        <tbody>
-                                            <tr>
-                                                <td>Tools</td>
-                                                <td><i class="fab fa-html5"></i>,
-                                                    <i class="fa-brands fa-css3-alt"></i>,
-                                                    <i class="fa-brands fa-bootstrap"></i>,Spline,PS
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Brief</td>
-                                                <td>A Calendar web for any years.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="col-sm-6 col-12 mx-auto text-center mycard">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12">
+                                        <a href="">
+                                            <img src="./img/web/front.png" class="w-100 rounded shadow">
+                                        </a>
+                                    </div>
+                                    <div class="mx-auto fs-5 col-sm-5 col-12 d-sm-flex flex-column text-center">
+                                        <b>Q BERGER</b>
+                                        <div class="fs-6 text-secondary">Web develop,design</div>
+                                        <table class="boxContent">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tools</td>
+                                                    <td><i class="fab fa-html5"></i>,
+                                                        <i class="fa-brands fa-css3-alt"></i>,
+                                                        <i class="fa-brands fa-bootstrap"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brief</td>
+                                                    <td>A Calendar web for any years.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 mx-auto text-center mycard">
+                            <div class="col-sm-6 col-12 mx-auto text-center mycard">
                                 <b class="fs-sm-6 fs-2">To Be Continued...</b>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="menu1" class="container tab-pane fade">
+                    <div id="menu1" class="container tab-pane fade">
+                        <!-- list swiper 活動消息-->
+                        <div class="container" data-bottom-top="transform:translateY(80px);opacity:0"
+                            data-center="transform:translateY(0px);opacity:1">
+                            <!-- swiper 開始 -->
+                            <div class="swiper" id="comment-swiper">
+                                <!-- swiper-wrapper 容器 -->
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide list-unstyled card position-relative border-0 card-shadow">
+                                        <div class="card-body pt-5 px-4">
+                                            <div class="mb-3 shadow d-flex justify-content-center align-items-center">
+                                                <img src="./img/ps/calendar.jpg" class="w-100 rounded">
+                                            </div>
+                                            <p class="mb-1 fw-bold">
+                                                ps
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide list-unstyled card position-relative border-0 card-shadow">
+                                        <div class="card-body pt-5 px-4">
+                                            <div class="mb-3 shadow d-flex justify-content-center align-items-center">
+                                                <img src="./img/ps/japan.jpg" class="w-100 rounded">
+                                            </div>
+                                            <p class="mb-1 fw-bold">
+                                                ps
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide list-unstyled card position-relative border-0 card-shadow">
+                                        <div class="card-body pt-5 px-4">
+                                            <div class="mb-3 shadow d-flex justify-content-center align-items-center">
+                                                <img src="./img/ps/banner.png" class="w-100 rounded"
+                                                    style="margin-bottom:166px;margin-top: 166px;">
+                                            </div>
+                                            <p class="mb-1 fw-bold">
+                                                ps
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide list-unstyled card position-relative border-0 card-shadow">
+                                        <div class="card-body pt-5 px-4">
+                                            <div
+                                                class="mb-3 shadow d-flex justify-content-center align-items-center rounded img-frame">
+                                                END...
+                                            </div>
+                                            <p class="mb-1 fw-bold">
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
 
-
-                </div>
-                <div id="menu2" class="container tab-pane fade"><br>
-                    <div class="title">
-                        COMMING <br> SOON...
+                                <!-- swiper 套件的分頁圓點 -->
+                                <div class="swiper-pagination position-static "></div>
+                            </div>
+                            <!-- swiper 結束 -->
+                        </div>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade"><br>
+                        <p class="title">
+                            COMMING <br> SOON...
+                        </p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- tab end -->
     <br>
     <br>
     <!-- ===== GO TOP/ DOWN ===== -->
@@ -257,8 +346,7 @@
     </div>
     </div>
     <br>
-    <!-- <hr class="border-3"> -->
-    <!-- footer -->
+    <!-- ===== FOOTER ===== -->
     <footer id="end" class="end">
         <div class="text-center p-4 footer fs-5">
             <i class="fa-solid fa-copyright"></i>
@@ -266,7 +354,11 @@
         </div>
         <!-- <span id="time"></span> -->
     </footer>
-    <!-- footer end -->
+
+    <!-- 載入 Swiper 套件 -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

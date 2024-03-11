@@ -4,10 +4,10 @@ AOS.init();
 $(window).scroll(function (scrollvalue) {
     if ($(window).scrollTop() > 0)
         $("nav.navbar").addClass("navbar-gb"),
-        $(".titleitem").css("color","rgb(200, 200, 200)")
+            $(".titleitem").css("color", "rgb(200, 200, 200)")
     else
         $("nav.navbar").removeClass("navbar-gb"),
-        $(".titleitem").css("color","rgb(17, 17, 17)")
+            $(".titleitem").css("color", "rgb(17, 17, 17)")
 
 });
 
@@ -19,6 +19,12 @@ $(window).scroll(function () {
     let scrollAbo = $('#about').offset().top;
     let scrollPro = $('#portfolio').offset().top;
     let scrollFooter = $('#end').offset().top;
+
+    // about PIC
+    if (scrollTop > scrollEnd - (screenHeight * 0.7)) {
+        $('.mypic1').css('animationName', 'pic1');
+        $('.mypic2').css('animationName', 'pic2');
+    }
 
     // GO TOP BTN
     let colorIN = "rgb(61, 61, 255)";
@@ -96,3 +102,37 @@ function initSwiper() {
 
 /* 觸發自己定義的函式 */
 initSwiper();
+
+//=========中英切換============
+// const ch= $('.CH').toArray();
+const en = $('.EN');
+
+// var language = 0;
+const chgLBtn = $('#chgL')
+
+text = {
+    en: [
+        "A rookie web developer and interior designer.<br>Like to explore the possibilities of life , and challenge myself to do better.",
+        "<div>-🌏Currently base in Taipei.Originally from Taiwan.</div><div>-💻Taking a Web class in WAD training center.</div><div>-🍵When not working, you can find me playing basketball , watching drama.</div>"
+    ],
+    ch: [
+        "菜鳥網頁工程師<br>喜歡探索人生的可能性，並挑戰自我、追求更好的自己。",
+        "<div>-🌏現居台北 ,台灣</div><div>-💻PHP資料庫網頁設計 @泰山職訓</div><div>-🍵在休閒時間，我喜歡打球、追劇</div>"
+    ]
+}
+var lang = 0;
+chgLBtn.on('click', function () {
+    if (lang == 0) {
+        for (i = 0; i < en.length; i++) {
+            en.eq(i).html(text.ch[i]);
+            chgLBtn.text('English')
+        }
+        lang = 1;
+    } else {
+        for (i = 0; i < en.length; i++) {
+            en.eq(i).html(text.en[i]);
+            chgLBtn.text('中文')
+            lang = 0;
+        }
+    }
+})

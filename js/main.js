@@ -112,12 +112,12 @@ const chgLBtn = $('#chgL')
 
 text = {
     en: [
-        "A rookie web developer and interior designer.<br>Like to explore the possibilities of life , and challenge myself to do better.",
-        "<div>-🌏Currently base in Taipei.Originally from Taiwan.</div><div>-💻Taking a Web class in WAD training center.</div><div>-🍵When not working, you can find me playing basketball , watching drama.</div>"
+        "Rookie web developer and interior designer.<br>Like to explore the possibilities of life , and challenge myself to do better.",
+        "<div>-🌏Currently based in Taipei, Taiwan.</div><div>-💻Programme Skills Trained by WAD Training &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Center,Ministry of Labor, Taiwan.</div><div>-🍵Off work, you could find me playing basketball or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watching TVs.</div>"
     ],
     ch: [
         "菜鳥網頁工程師<br>喜歡探索人生的可能性，並挑戰自我、追求更好的自己。",
-        "<div>-🌏現居台北 ,台灣</div><div>-💻PHP資料庫網頁設計 @泰山職訓</div><div>-🍵在休閒時間，我喜歡打球、追劇</div>"
+        "<div>-🌏 現居台北 ,台灣</div><div>-💻 PHP資料庫網頁設計 @泰山職訓</div><div>-🍵 在休閒時間，我喜歡打球、追劇</div>"
     ]
 }
 var lang = 0;

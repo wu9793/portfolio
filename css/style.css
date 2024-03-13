@@ -277,14 +277,14 @@ table.edu {
     width: 100%;
 
     /* text-align: center; */
-    th {
+    .tdtitle {
         width: 30%;
+    }
+    td {
+        border: 3px rgb(200, 200, 200) dashed;
     }
 }
 
-table.edu td {
-    border: 3px rgb(200, 200, 200) dashed;
-}
 
 .tool {
 

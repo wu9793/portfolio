@@ -96,7 +96,7 @@ nav {
 @keyframes typing {
 
     0% {
-        width: 15rem
+        width: 20rem
     }
 
     35%,
@@ -106,7 +106,7 @@ nav {
 
     80%,
     100% {
-        width: 15rem
+        width: 20rem
     }
 }
 
